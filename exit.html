@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exit - ScanGoEase</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <header>
+    <h1>🚪 Vehicle Exit - ScanGoEase</h1>
+    <p>Scan / Enter Vehicle Number to Pay & Exit</p>
+  </header>
+
+  <main>
+    <!-- Input / Scan -->
+    <section class="card">
+      <h2>Exit Verification</h2>
+      <form id="exitForm">
+        <label for="vehicleNoInput">Enter Vehicle Number</label>
+        <input type="text" id="vehicleNoInput" placeholder="MH12 AB 1234" required>
+        <button type="button" id="scanBtn" class="btn">Verify & Generate Payment</button>
+      </form>
+    </section>
+
+    <!-- Vehicle Details + Payment -->
+    <section class="card" id="vehicleDetailsSection">
+      <h2>Vehicle Details & Payment</h2>
+      <div id="vehicleDetails">
+        <p>Enter vehicle number and click Verify.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 ScanGoEase By Team GPB </p>
+  </footer>
+
+  <!-- Firebase -->
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="exit.js"></script>
+</body>
+</html>
