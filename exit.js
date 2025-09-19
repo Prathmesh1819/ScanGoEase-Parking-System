@@ -24,7 +24,7 @@ scanBtn.addEventListener("click", async () => {
   const amount = diffHours > 0 ? (data.vehicleType === "4-wheeler" ? 15 : 10) * diffHours : 0;
 
   // UPI Link
-  const upiID = "8788177783@ybl"; // replace with your UPI ID
+  const upiID = "jiasingh2705@okaxis"; // replace with your UPI ID
   const payeeName = "ScanGoEase";
   const upiLink = `upi://pay?pa=${upiID}&pn=${encodeURIComponent(payeeName)}&am=${amount}&cu=INR&tn=Parking+Payment`;
 
