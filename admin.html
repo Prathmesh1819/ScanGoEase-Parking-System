@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - ScanGoEase</title>
+  <link rel="stylesheet" href="style1.css">
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🛠️ ScanGoEase Admin Dashboard</h1>
+  </header>
+
+  <main>
+    <h2>Current Parking Entries</h2>
+    <table border="1">
+      <thead>
+        <!-- <tr>
+          <th>Vehicle Number</th>
+          <th>Vehicle Type</th>
+          <th>Slot</th>
+          
+          <th>Entry Time </th>
+          <th>Current Status</th>
+          <th>Options</th>
+        </tr> -->
+      </thead>
+      <tbody id="vehicleTable"></tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>© 2025 ScanGoEase By Team GPB </p>
+  </footer>
+
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="admin.js"></script>
+</body>
+</html>

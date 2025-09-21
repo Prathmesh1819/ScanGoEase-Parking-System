@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScanGoEase - Parking System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🚗 ScanGoEase Parking</h1>
+    <p>Smart Parking Management with QR</p>
+    
+  </header>
+
+  <main>
+    
+    <section class="stats">
+      <div class="card">Total Slots: <span id="totalSlots">24</span></div>
+      <div class="card">Available Slots: <span id="availableSlots">24</span></div>
+      <div class="card">Occupied Slots: <span id="occupiedSlots">0</span></div>
+    </section>
+
+    <section class="entry-form">
+      <h2>Vehicle Entry</h2>
+      <form id="parkingForm">
+        <input type="text" id="vehicleNumber" placeholder="Enter Vehicle Number" required>
+        <select id="vehicleType">
+          <option value="2-wheeler">2-Wheeler</option>
+          <option value="4-wheeler">4-Wheeler</option>
+        </select>
+        <button type="submit">Generate QR</button>
+      </form>
+      <div id="qrSection" style="display:none;">
+        <h3>Your Parking QR:</h3>
+        <canvas id="qrCanvas"></canvas>
+        <p>Show this QR code at exit.</p>
+        <p>Click below when a vehicle wants to exit:</p>
+        <a href="exit.html">
+        <button>Go to Exit Page</button>
+        </a>
+      </div>
+    </section>
+
+    <section class="slots">
+      <h2>Parking Slots</h2>
+      <div id="slotGrid" class="grid"></div>
+    </section>
+
+    <div class="center1">
+      <a href="admin-login.html">
+        <button>Admin Login</button>
+      </a>
+    </div>
+    
+    
+  </main>
+
+  <footer>
+  
+    <p>© 2025 ScanGoEase By Team GPB </p>
+  </footer>
+
+  <!-- QRious first -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+<!-- Your Firebase initialization -->
+<script type="module" src="firebase.js"></script>
+<!-- Your main script -->
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
