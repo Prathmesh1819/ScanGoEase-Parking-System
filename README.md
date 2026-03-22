@@ -31,8 +31,8 @@ Scan & Go Ease is a web-based smart parking management system designed to simpli
 ## 🛠️ Tech Stack
 
 - Frontend: HTML, CSS, JavaScript
-- Backend: (Add if used – Node.js / Firebase / etc.)
-- Database: (Add if used – MongoDB / Firestore / etc.)
+- Backend: (JavaScript / Firebase / etc.)
+- Database: ( Firestore / etc.)
 - Deployment: Vercel
 
 ---
